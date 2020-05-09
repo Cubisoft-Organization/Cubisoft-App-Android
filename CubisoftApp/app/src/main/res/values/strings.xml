@@ -3,4 +3,25 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="forgot_password">¿Olvidaste Contraseña?</string>
+    <string name="user">Usuario</string>
+    <string name="login">Login</string>
+    <string name="reservation_code">Codigo de la Reserva:</string>
+    <string name="sign_up">Registrar</string>
+    <string name="date">Fecha:</string>
+    <string name="start">Inicio:</string>
+    <string name="end">Fin:</string>
+    <string name="partner_code">Codigo del Compañero</string>
+    <string name="activate">Activar</string>
+    <string name="here">aqui</string>
+    <string name="emal">Emal</string>
+    <string name="password">Password</string>
+    <string name="tvcubicle">tvCubiculo</string>
+    <string name="tvdate">tvFecha</string>
+    <string name="tvstart">tvInicio</string>
+    <string name="tvend">tvFin</string>
+    <string name="partner">Partner</string>
+    <string name="tvreser_code">tvCodReserva</string>
+    <string name="for_pass_comment">Si debera cancelar la reserva, presione</string>
+
 </resources>
