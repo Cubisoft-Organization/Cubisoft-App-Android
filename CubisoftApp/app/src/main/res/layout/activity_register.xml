@@ -5,35 +5,35 @@
     android:layout_margin="20dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".controllers.activities.LoginActivity">
-
+    tools:context=".controllers.activities.RegisterActivity">
     <TextView
         android:id="@+id/ltitleTextview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="50dp"
-        android:text="@string/inicio_sesi_n"
+        android:text="@string/registro"
         android:textStyle="bold"
-        android:textSize="25dp"
+        android:textSize="25sp"
+        android:layout_marginTop="50dp"
         android:textColor="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
     <ImageView
         android:id="@+id/llogoImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
+        android:contentDescription="@string/logo"
         android:src="@drawable/cubisoft"
-        app:layout_constraintTop_toBottomOf="@id/ltitleTextview"
         android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/lemailEditText"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
+        app:layout_constraintTop_toBottomOf="@id/ltitleTextview"
+        app:layout_constraintBottom_toBottomOf="@id/rusernameEditText"/>
 
     <EditText
-        android:id="@+id/lemailEditText"
+        android:id="@+id/rusernameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints"
@@ -41,16 +41,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
+        android:inputType="textPersonName"
         app:layout_constraintTop_toBottomOf="@id/llogoImageView"
-        android:inputType="textEmailAddress"
-        android:hint="@string/correo"
+        android:hint="@string/nombre"
         android:paddingTop="40dp"/>
     <EditText
-        android:id="@+id/lpasswordEditText"
+        android:id="@+id/remailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints"
-        app:layout_constraintTop_toBottomOf="@id/lemailEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toBottomOf="@id/rusernameEditText"
+        android:inputType="textEmailAddress"
+        android:hint="@string/correo"
+        android:paddingTop="20dp"/>
+    <EditText
+        android:id="@+id/rpasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/remailEditText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:hint="@string/contrase_a"
@@ -60,28 +73,37 @@
         android:inputType="textPassword"/>
 
     <Button
-        android:id="@+id/lLogCustomerButton"
+        android:id="@+id/rregisterCustomerButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginTop="40dp"
         android:background="@color/colorPrimaryDark"
         android:elevation="5dp"
         android:padding="10dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:text="@string/login"
+        android:text="@string/registrar"
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lpasswordEditText"
+        app:layout_constraintTop_toBottomOf="@id/rpasswordEditText"
         tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toBottomOf="@id/rregisterCustomerButton"
+        android:text="Al registrarme acepto los terminos de uso y las politicas de privacidad" />
     <TextView
-        android:id="@+id/tvRegistrar"
+        android:id="@+id/tvLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="218dp"
-        android:text="Registrar"
+        android:text="Login"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#2196F3"
@@ -90,10 +112,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lLogCustomerButton"/>
-
-
-
+        app:layout_constraintTop_toBottomOf="@+id/checkedTextView"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
