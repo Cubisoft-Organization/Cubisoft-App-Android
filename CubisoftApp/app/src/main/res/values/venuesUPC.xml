@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="venues_upc_array">
+    <item>San Isidro</item>
+    <item>Monterrico</item>
+    <item>Chorrillos</item>
+    <item>San Miguel</item>
+</string-array>
+</resources>

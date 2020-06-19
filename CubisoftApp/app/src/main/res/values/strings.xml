@@ -23,5 +23,11 @@
     <string name="partner">Partner</string>
     <string name="tvreser_code">tvCodReserva</string>
     <string name="for_pass_comment">Si debera cancelar la reserva, presione</string>
+    <string name="reserveTitle">Reservar Cubiculos</string>
+    <string name="dateSelect">Día:</string>
+    <string name="selectHour">Hora:</string>
+    <string name="selectTime">Tiempo:</string>
+    <string name="selectChair">Número de asientos</string>
+    <string name="consult">Consultar</string>
 
 </resources>
